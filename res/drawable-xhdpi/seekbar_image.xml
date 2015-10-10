@@ -5,7 +5,7 @@
     android:drawable="@drawable/seekbar_total" />
     <!--全部能量图  -->
   <item
-    android:id="@+android:id/SecondaryProgress"
+    android:id="@+android:id/secondaryProgress"
     android:drawable="@drawable/seekbar_total" />
     <!-- 进和能量图 -->
   <item

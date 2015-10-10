@@ -5,14 +5,16 @@
     android:versionName="1.0.0" >
 
     <uses-sdk
-        android:minSdkVersion="18"
-        android:targetSdkVersion="18" />
+        android:minSdkVersion="17"
+        android:targetSdkVersion="17" />
+    <!-- 别支持openGl ES 2.0的设备所看到 -->
     <uses-feature android:required="true" android:glEsVersion="0x00020000"/>
 
         <!-- Declare this required feature if you want to make the app available to BLE-capable
     devices only.  If you want to make your app available to devices that don't support BLE,
     you should omit this in the manifest.  Instead, determine BLE capability by using
     PackageManager.hasSystemFeature(FEATURE_BLUETOOTH_LE) -->
+    <!-- 在支持BLE的android设备上看到 -->
     <uses-feature android:name="android.hardware.bluetooth_le" android:required="true"/>
 
     <uses-permission android:name="android.permission.BLUETOOTH"/>
